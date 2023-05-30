@@ -150,7 +150,7 @@ candles_recursive = function(n){
   
 
   blown = sample(1:n, 1)
-  return(1 + candles(n-blown));
+  return(1 + candles_recursive(n-blown));
  
 }
 
