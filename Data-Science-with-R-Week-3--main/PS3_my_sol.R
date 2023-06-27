@@ -171,7 +171,7 @@ text(dat$over.votes[inds],dat$rating[inds],labels = dat$name[inds])
 
 #Q8
 year_category <- (dat$year>1996)+1
-plot(dat$over.votes[before_1996],dat$rating[before_1996],xlab = "# Votes",ylab = "Rating",pch = 16,col = year_category)
+plot(dat$over.votes,dat$rating,xlab = "# Votes",ylab = "Rating",pch = 16,col = year_category)
 legend("bottomright",c("after 1996","before 1996"), col = c(2,1), pch =16)
 
 #Q9
